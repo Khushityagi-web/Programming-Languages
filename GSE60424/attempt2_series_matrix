@@ -1,0 +1,43 @@
+import gzip
+import shutil
+# Extract the file
+with gzip.open("GSE60424_data/GSE60424_GEOSubmit_FC1to11_normalized_counts.txt.gz", 'rb') as f_in:
+    with open("GSE60424_data/GSE60424_normalized_counts.txt", 'wb') as f_out:
+        shutil.copyfileobj(f_in, f_out)
+
+print("File extracted successfully.")
+import pandas as pd
+# Read the extracted file
+df = pd.read_csv("GSE60424_data/GSE60424_normalized_counts.txt", sep="\t", index_col=0)
+# Check shape and preview
+print("Matrix shape:", df.shape)
+print(df.head())
+
+R code
+# Load required libraries
+library(DESeq2)
+library(ggplot2)
+library(pheatmap)
+# Step 1: Read expression matrix
+counts <- read.delim("GSE60424_normalized_counts.txt", row.names=1, check.names=FALSE)
+# Step 2: Create metadata (temporary for testing)
+# You should customize this based on actual sample groups (naive/memory/effector)
+sample_info <- data.frame(row.names = colnames(counts),
+                          condition = rep(c("Naive", "Effector", "Memory"), length.out = ncol(counts)))
+# Step 3: Build DESeq2 dataset
+dds <- DESeqDataSetFromMatrix(countData = round(counts),
+                              colData = sample_info,
+                              design = ~ condition)
+# Step 4: Variance-stabilizing transformation
+vsd <- vst(dds, blind = TRUE)
+# Step 5: Boxplot of transformed counts
+boxplot(assay(vsd), las = 2, main = "Boxplot of VST-normalized Counts", ylab = "VST Expression", col = "lightblue")
+# Step 6: PCA plot
+plotPCA(vsd, intgroup = "condition")
+# Step 7: Heatmap of top 100 most variable genes
+topVarGenes <- head(order(rowVars(assay(vsd)), decreasing = TRUE), 100)
+pheatmap(assay(vsd)[topVarGenes, ],
+         show_rownames = FALSE,
+         annotation_col = as.data.frame(colData(vsd)),
+         main = "Top 100 Variable Genes Heatmap")
+
