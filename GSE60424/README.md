@@ -52,12 +52,6 @@ GSE60424/
 ├── workflow.png # Flowchart of full hybrid workflow
 └── README.md # This file
 
-yaml
-Copy
-Edit
-
----
-
 ## 🔧 Requirements
 
 ### Python
@@ -71,8 +65,6 @@ Edit
 - ggplot2
 - reshape2
 - matrixStats
-
----
 
 ## 📚 References
 
