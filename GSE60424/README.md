@@ -1,4 +1,4 @@
-# 🧬 GSE60424 RNA-seq Hybrid Workflow
+# 🧬 Hybrid Python–R Workflow for Exploring the GSE60424 CD8+ T-Cell Transcriptome
 
 This repository presents a modular hybrid scripting workflow for transcriptomic analysis of the **GSE60424** dataset:  
 **"Transcriptome analysis of CD8+ T cell subsets in humans"**.
