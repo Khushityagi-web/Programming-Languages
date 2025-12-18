@@ -1,68 +1,71 @@
-# 🧬 Counting Gene Occurrences in R (Beginner Exercise)
+# Counting Gene Occurrences in R (Beginner Exercise)
 
-This script demonstrates how to count repeated gene names in a vector using R’s built-in table() function.
-It is part of a set of foundational programming tasks where I practiced applying basic R operations to simple biological examples.
+This script demonstrates how to count repeated gene names in a vector using R’s built-in `table()` function. It is part of a set of foundational programming tasks where I practiced applying basic R operations to simple biological examples.
 
-## 🎯 Purpose
+---
+
+## Purpose
 
 This exercise helps build early R skills, including:
 
-🔹 working with vectors
-
-🔹  using table() to summarize categorical data
-
-🔹  converting tabular output into lists
-
-🔹  printing structured results
+- Working with vectors  
+- Using `table()` to summarize categorical data  
+- Converting tabular output into lists  
+- Printing structured results  
 
 Although gene names are used, the goal is to understand how R handles frequency counting, which is essential for many downstream bioinformatics workflows.
 
-##  What the Script Does
+---
 
-🔹 Defines a function count_gene_occurrences()
+## What the Script Does
 
-🔹 Takes a vector of gene names
+- Defines a function `count_gene_occurrences()`  
+- Takes a vector of gene names  
+- Counts how many times each gene appears  
+- Returns the results as a list  
+- Tests the function using an example vector  
+- Prints the output in a readable format  
 
-🔹 Counts how many times each appears
+### Example Output
 
-🔹 Returns the results as a list
+    $GeneA
+    [1] 2
 
-🔹 Tests the function using an example vector
+    $GeneB
+    [1] 3
 
-🔹 Prints the output in a readable format
+    $GeneC
+    [1] 1
 
-Example Output:
-$GeneA
-[1] 2
+---
 
-$GeneB
-[1] 3
+## File Structure
 
-$GeneC
-[1] 1
+    count_gene_occurrences/
+    │── script.R     # R function to count occurrences of gene names
+    │── README.md
 
-## 📂 File Structure
-count_gene_occurrences/
-│── script.R      # R function to count occurrences of gene names
-└── README.md
+---
 
 ## Skills Practiced
 
-🔹 Frequency counting with table()
+- Frequency counting using `table()`  
+- Converting data structures (table → list)  
+- Writing simple functions in R  
+- Basic vector manipulation  
+- Applying biological labels to foundational logic  
 
-🔹 Converting data structures (table → list)
-
-🔹 Writing simple functions in R
-
-🔹 Basic vector manipulation
-
-🔹 Applying biological labels to foundational logic
+---
 
 ## Requirements
 
-R 3.6+
-(No external packages required)
+- R 3.6+  
 
-### 🤝 Author
+No external packages are required.
 
-Khushi Tyagi — strengthening foundational R skills for bioinformatics.
+---
+
+## Author
+
+**Khushi Tyagi**  
+Strengthening foundational R skills for bioinformatics
