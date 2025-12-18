@@ -1,59 +1,66 @@
-# 🧬 Gene Expression Classification in R (Beginner Exercise)
+# Gene Expression Classification in R (Beginner Exercise)
 
-This script demonstrates a simple R function that classifies gene expression values into categories such as High, Moderate, Low, and Undetected.
-It is part of my foundational programming exercises while learning to apply R logic to biological contexts.
+This script demonstrates a simple R function that classifies gene expression values into categories such as **High**, **Moderate**, **Low**, and **Undetected**. It is part of my foundational programming exercises while learning to apply R logic to biological contexts.
 
-## 🎯 Purpose
+---
 
-To practice:
+## Purpose
 
-🔹 Writing user-defined functions in R
+The goal of this exercise is to practice:
 
-🔹 Using conditional statements (if, else if, else)
-
-🔹 Iterating through vectors
-
-🔹 Printing structured output with cat()
+- Writing user-defined functions in R  
+- Using conditional statements (`if`, `else if`, `else`)  
+- Iterating through vectors  
+- Printing structured output using `cat()`  
 
 The biological theme (gene expression thresholds) is used purely as an intuitive example to make the exercise more meaningful.
 
-## 🧬 What the Script Does
+---
 
-🔹 Defines a function check_gene_expression() that assigns categories based on numeric thresholds
+## What the Script Does
 
-🔹 Applies this function to a vector of example expression values
+- Defines a function `check_gene_expression()` that assigns categories based on numeric thresholds  
+- Applies this function to a vector of example expression values  
+- Prints the assigned category for each value  
 
-🔹 Prints out the assigned category for each value
+### Thresholds Used
 
-Thresholds Used:
-🔹 Expression Value	Category
-🔹 ≥ 1000	High
-🔹 ≥ 500	Moderate
-🔹 ≥ 100	Low
-🔹 < 100	Undetected
+| Expression Value | Category     |
+|------------------|--------------|
+| ≥ 1000           | High         |
+| ≥ 500            | Moderate     |
+| ≥ 100            | Low          |
+| < 100            | Undetected  |
 
-## 📂 File Structure
-check_gene_expression/
-│── script.R      # R script implementing the classification function
-└── README.md
+---
+
+## File Structure
+
+    check_gene_expression/
+    │── script.R     # R script implementing the classification function
+    │── README.md
+
+---
 
 ## Skills Practiced
 
-🔹 R function creation
+- R function creation  
+- Conditional logic  
+- Looping with `for`  
+- Basic output formatting  
+- Translating biological concepts into simple computational rules  
 
-🔹 Conditional logic
+---
 
-🔹 Looping with for
+## Requirements
 
-🔹 Basic output formatting
+- R 3.6+  
 
-🔹 Translating biological concepts into simple computational rules
+No additional packages are required.
 
-##  Requirements
+---
 
-🔹 R 3.6+
-(No additional packages required)
+## Author
 
-### 🤝 Author
-
-Khushi Tyagi — building core R foundations for bioinformatics workflows.
+**Khushi Tyagi**  
+Building core R foundations for bioinformatics workflows
