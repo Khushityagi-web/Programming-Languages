@@ -1,63 +1,66 @@
-# 🧬 GC Content Calculator in Python (Beginner Exercise)
+# GC Content Calculator in Python (Beginner Exercise)
 
-This repository contains a simple Python function that calculates the GC content of a DNA sequence.
-It is part of my early programming exercises where I practiced writing reusable functions for biological string processing.
+This repository contains a simple Python function that calculates the GC content of a DNA sequence. It is part of my early programming exercises where I practiced writing reusable functions for biological string processing.
 
 GC content is a basic but important metric in genomics, representing the percentage of nucleotides in a DNA molecule that are either G (guanine) or C (cytosine).
 
-## 🎯 Purpose
+---
+
+## Purpose
 
 This exercise was designed to strengthen:
 
-🔹 Python function creation
+- Python function creation  
+- String handling and counting operations  
+- Basic computation and percentage calculation  
+- Printing formatted biological results  
 
-🔹 String handling and counting operations
+---
 
-🔹 Basic computation and percentage calculation
+## What the Script Does
 
-🔹 Printing formatted biological results
+- Defines a function `compute_gc_content()`  
+- Counts the number of `G` and `C` bases  
+- Computes GC percentage  
+- Returns the result as a float  
+- Tests the function on a sample DNA sequence  
+- Prints the GC content formatted to two decimal places  
 
-## 🧬 What the Script Does
+### Example
 
-🔹 Defines a function compute_gc_content()
+    Input sequence: ATGCGTACG
+    Output: GC Content: 55.56%
 
-🔹 Counts the number of 'G' and 'C' bases
+---
 
-🔹 Computes GC percentage
+## File Structure
 
-🔹 Returns the result as a float
+    compute_gc_content/
+    │── script.py     # Python function to compute GC percentage
+    │── README.md
 
-🔹 Tests the function on a sample DNA sequence
+---
 
-🔹 Prints the GC content with two decimal places
+## Skills Practiced
 
-Example:
+- Writing modular functions in Python  
+- Understanding string methods such as `.count()`  
+- Performing arithmetic and percentage calculations  
+- Using f-strings for clean output formatting  
+- Representing biological concepts computationally  
 
-Input sequence: ATGCGTACG
-Output: GC Content: 55.56%
+---
 
-## 📂 File Structure
-compute_gc_content/
-│── script.py      # Python function to compute GC percentage
-└── README.md
+## Requirements
 
-##  Skills Practiced
+- Python 3.x  
 
-🔹 Writing modular functions in Python
+No external packages are required.
 
-🔹 Understanding string methods (.count())
+---
 
-🔹 Performing arithmetic and percentage calculations
+## Author
 
-🔹 Using f-strings for clean output formatting
+**Khushi Tyagi**  
+Building foundational Python skills for bioinformatics
 
-🔹 Representing biological concepts computationally
-
-##  Requirements
-
-Python 3.x
-(No external packages required)
-
-### 🤝 Author
-
-Khushi Tyagi — building foundational Python skills for bioinformatics.
