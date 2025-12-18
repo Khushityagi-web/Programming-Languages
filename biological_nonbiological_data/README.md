@@ -1,69 +1,68 @@
-# 📘 Python Basics: Representing Biological & Non-Biological Data
+# Python Basics: Representing Biological & Non-Biological Data
 
-This folder contains a beginner-friendly Python script demonstrating how different data types are used to represent biological and environmental information.
-It is part of my early programming exercises while building foundational skills for bioinformatics.
+This folder contains a beginner-friendly Python script demonstrating how different data types are used to represent biological and environmental information. It is part of my early programming exercises while building foundational skills for bioinformatics.
 
-## 🎯 Purpose
+---
+
+## Purpose
 
 The goal of this script is to practice:
 
-🔹 Python primitive data types (strings, integers, floats, booleans)
+- Python primitive data types (strings, integers, floats, booleans)  
+- Python collections (lists, dictionaries)  
+- Printing and formatting structured output  
+- Representing biological entities (genes, proteins) with basic Python objects  
 
-🔹 Python collections (lists, dictionaries)
+---
 
-🔹 Printing and formatting structured output
+## What the Script Demonstrates
 
-🔹 Representing biological entities (genes, proteins) with basic Python objects
+### Biological Data Examples
 
-🧬 What the Script Demonstrates
-🔹 Biological Data Examples
+- Protein name (string)  
+- Gene ID (integer)  
+- Protein molecular weight (float)  
+- Activity status (boolean)  
+- List of amino acids (list)  
 
-🔹 Protein name (string)
+### Non-Biological / Environmental Data
 
-🔹 Gene ID (integer)
+- Air quality index (integer)  
+- Average rainfall (float)  
+- City name (string)  
+- Rainfall status (boolean)  
+- Temperature records (dictionary)  
 
-🔹 Protein molecular weight (float)
+The script prints both categories to illustrate how Python handles different data types in a structured and readable way.
 
-🔹 Activity status (boolean)
+---
 
-🔹 List of amino acids (list)
+## File Structure
 
-🔹 Non-Biological / Environmental Data
+    biological_nonbiological_data/
+    │── script.py     # Demonstrates Python data types with biological examples
+    │── README.md
 
-🔹 Air quality index (integer)
-
-🔹 Average rainfall (float)
-
-🔹 City name (string)
-
-🔹 Rainfall status (boolean)
-
-🔹 Temperature records (dictionary)
-
-The script prints both categories to show how Python handles different data types.
-
-## 📂 File Structure
-biological_nonbiological_data/
-│── script.py   # Demonstrates Python data types with biological examples
-└── README.md
+---
 
 ## Skills Practiced
 
-🔹 Python variable creation
+- Python variable creation  
+- Use of primitive and collection data types  
+- Basic formatting with f-strings  
+- Translating real-world concepts into programmatic structures  
 
-🔹 Use of primitive and collection data types
+---
 
-🔹 Basic formatting with f-strings
+## Requirements
 
-🔹 Translating real-world concepts into programmatic structures
+- Python 3.x  
 
-##  Requirements
+No external libraries are required.
 
-🔹 Python 3.x
+---
 
-🔹 No external libraries are needed.
+## Author
 
-## 🤝 Author
-
-Khushi Tyagi
-Learning foundational programming skills for bioinformatics.
+**Khushi Tyagi**  
+Learning foundational programming skills for bioinformatics
