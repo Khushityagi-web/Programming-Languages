@@ -24,19 +24,21 @@ This is not a bioinformatics analysis repository. Instead, it captures the essen
 
 ## Repository Structure
 
-Each folder contains a standalone exercise focused on a specific fundamental:
+Each folder contains a standalone exercise focused on a specific fundamental or early applied workflow:
 
     Programming-Languages/
-    │── biological_nonbiological_data/        # Representing data types
-    │── check_gene_expression/                # Conditional logic in R
-    │── compute_gc_content/                   # Simple DNA sequence operations (Python)
-    │── count_gene_occurrences/               # Dictionary-based counting (Python)
-    │── count_gene_occurrances/               # Frequency counting (R)
-    │── gc_content_reverse_complement/        # Reverse complement + GC% (Python)
-    │── gene_expression-analysis/             # Loop practice (Python)
-    │── gene_expression_analysis_R/           # Loop practice (R)
+    │── GSE60424/                              # Hybrid Python–R transcriptomics workflow
+    │── biological_nonbiological_data/         # Representing data types
+    │── check_gene_expression/                 # Conditional logic in R
+    │── compute_gc_content/                    # Simple DNA sequence operations (Python)
+    │── count_gene_occurrences/                # Dictionary-based counting (Python)
+    │── count_gene_occurrances/                # Frequency counting (R)
+    │── gc_content_reverse_complement/         # Reverse complement + GC% (Python)
+    │── gene_expression-analysis/              # Loop practice (Python)
+    │── gene_expression_analysis_R/            # Loop practice (R)
     │── gene_expression_classifier/            # Conditional classification (Python)
     │── README.md                              # This file
+
 
 ---
 
